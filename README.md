@@ -19,6 +19,22 @@ Built with **Streamlit**, **Scikit-Learn**, and **mlxtend**, this project proces
 
 ---
 
+## 📸 Screenshots
+
+### 1. Store Performance Dashboard
+*(Drop a screenshot of the main page charts here)*
+![Dashboard](assets/dashboard.png)
+
+### 2. Customer Profile & CRM
+*(Drop a screenshot of a user lookup, e.g., ID 17850.0, showing their KPI cards and recommendations)*
+![Customer Profile](assets/customer_profile.png)
+
+### 3. Advanced Recommender
+*(Drop a screenshot showing the dual-column "Frequently Bought Together" vs "Customers Also Liked")*
+![Recommender](assets/recommender.png)
+
+---
+
 ## 🛠️ Technology Stack
 
 *   **Frontend**: [Streamlit](https://streamlit.io/)
