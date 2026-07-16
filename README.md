@@ -8,40 +8,41 @@ Built with Streamlit, Scikit-Learn and mlxtend, this project processes raw trans
 
 ## Key Features
 
-*   ** Store Performance Dashboard**: An interactive overview of the store's top-performing metrics, including best-selling products and transaction volumes by country, visualized with Plotly.
-*   ** Customer Profile (CRM)**: Look up any customer by their ID to get a 360-degree view of their purchasing behavior. View their RFM (Recency, Frequency, Monetary) stats, their assigned value segment, their complete purchase history, and receive **personalized recommendations** on what they are most likely to buy next.
-*   ** Customer Segmentation (RFM + KMeans)**: Uses K-Means clustering to automatically group customers into segments (`High-Value`, `Regular`, `Occasional Shopper`, `At-Risk`). 
-    *   *Individual Prediction:* Enter manual RFM values to instantly predict a customer's segment.
-    *   *Batch Prediction:* Upload a CSV of RFM values to segment thousands of customers simultaneously and download the results.
-*   ** Advanced Product Recommender**: 
-    *   *Frequently Bought Together*: Uses Market Basket Analysis (**FP-Growth algorithm**) to find strong association rules between items in the exact same cart.
-    *   *Customers Also Liked*: Uses **Cosine Similarity** (Collaborative Filtering) to recommend products based on broader customer purchase patterns.
+*   Store Performance Dashboard : An interactive overview of the store's top-performing metrics, including best-selling products and transaction volumes by country, visualized with Plotly.
+*   Customer Profile : Look up any customer by their ID to get a view of their purchasing behavior. View their RFM (Recency, Frequency, Monetary) stats, their assigned value segment, their complete purchase history, and receive personalized recommendations on what they are most likely to buy next.
+*   Customer Segmentation : Uses K-Means clustering to automatically group customers into segments (`High-Value`, `Regular`, `Occasional Shopper`, `At-Risk`). 
+    *   Individual Prediction: Enter manual RFM values to instantly predict a customer's segment.
+    *   Batch Prediction: Upload a CSV of RFM values to segment thousands of customers simultaneously and download the results.
+*   Advanced Product Recommender : 
+    *   Frequently Bought Together: Uses Market Basket Analysis (FP-Growth algorithm) to find strong association rules between items in the exact same cart.
+    *   Customers Also Liked: Uses Cosine Similarity to recommend products based on broader customer purchase patterns.
 
 ---
 
 ## Screenshots
 
 ### 1. Store Performance Dashboard
-*<img width="1599" height="764" alt="Screenshot 2026-07-16 213209" src="https://github.com/user-attachments/assets/10fff3da-81b7-4901-b67d-e5331e7e9b3c" />
+<img width="1599" height="764" alt="Screenshot 2026-07-16 213209" src="https://github.com/user-attachments/assets/10fff3da-81b7-4901-b67d-e5331e7e9b3c" />
+
 
 
 ### 2. Customer Profile & CRM
-*<img width="1599" height="742" alt="Screenshot 2026-07-16 213313" src="https://github.com/user-attachments/assets/67b834b2-3b8d-4f4a-a3a5-48dd51a31175" />
-*<img width="1591" height="761" alt="Screenshot 2026-07-16 213329" src="https://github.com/user-attachments/assets/14765032-fbca-4029-b155-f5f5fc371cb7" />
+<img width="1599" height="742" alt="Screenshot 2026-07-16 213313" src="https://github.com/user-attachments/assets/67b834b2-3b8d-4f4a-a3a5-48dd51a31175" />
+<img width="1591" height="761" alt="Screenshot 2026-07-16 213329" src="https://github.com/user-attachments/assets/14765032-fbca-4029-b155-f5f5fc371cb7" />
+
 
 
 ### 3. Advanced Recommender
 <img width="1585" height="754" alt="Screenshot 2026-07-16 213413" src="https://github.com/user-attachments/assets/54b6a98c-5f54-4ecc-b4a2-495e09860e7a" />
 
-
 ---
 
 ## Technology Stack
 
-*   **Frontend**: [Streamlit](https://streamlit.io/)
-*   **Machine Learning**: [Scikit-learn](https://scikit-learn.org/) (KMeans, StandardScaler, Cosine Similarity), [mlxtend](http://rasbt.github.io/mlxtend/) (FP-Growth, Association Rules)
-*   **Data Manipulation**: Pandas, NumPy, SciPy (Sparse Matrices for memory efficiency)
-*   **Visualization**: Plotly
+*   Frontend : [Streamlit](https://streamlit.io/)
+*   Machine Learning : [Scikit-learn](https://scikit-learn.org/) (KMeans, StandardScaler, Cosine Similarity), [mlxtend](http://rasbt.github.io/mlxtend/) (FP-Growth, Association Rules)
+*   Data Manipulation : Pandas, NumPy, SciPy
+*   Visualization : Plotly
 
 ---
 
@@ -78,7 +79,6 @@ Before running the web app, you must process the data and generate the machine l
 ```bash
 python generate_models.py
 ```
-*(Note: Depending on your hardware, this may take a minute or two as it processes hundreds of thousands of transactions).*
 
 ### 5. Launch the Application
 Once the `.pkl` files are generated in your directory, start the Streamlit server:
@@ -88,7 +88,7 @@ streamlit run Shopper_Spectrum_app.py
 
 ---
 
-## 💡 Future Enhancements
-*   Integration with an SQL database (like SQLite or DuckDB) to eliminate memory limitations for massive datasets.
-*   Implementation of Customer Lifetime Value (CLV) predictions using BG/NBD models.
+##  Future Enhancements
+*   Integration with an SQL database (SQLite) to eliminate memory limitations for massive datasets.
+*   Implementation of Customer Lifetime Value predictions using models.
 *   Time-series forecasting for inventory demand.
