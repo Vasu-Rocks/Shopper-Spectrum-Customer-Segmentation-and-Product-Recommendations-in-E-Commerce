@@ -1,41 +1,42 @@
-# 🛍️ Shopper Spectrum: E-Commerce Customer CRM & Recommender
+# Shopper Spectrum: E-Commerce Customer CRM & Recommender
 
 Shopper Spectrum is an end-to-end Machine Learning web application designed to help e-commerce businesses understand their customers better and increase sales through personalized recommendations. 
 
-Built with **Streamlit**, **Scikit-Learn**, and **mlxtend**, this project processes raw transaction data to build a robust Customer Relationship Management (CRM) dashboard.
+Built with Streamlit, Scikit-Learn and mlxtend, this project processes raw transaction data to build a robust Customer Relationship Management (CRM) dashboard.
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
-*   **📊 Store Performance Dashboard**: An interactive overview of the store's top-performing metrics, including best-selling products and transaction volumes by country, visualized with Plotly.
-*   **👤 Customer Profile (CRM)**: Look up any customer by their ID to get a 360-degree view of their purchasing behavior. View their RFM (Recency, Frequency, Monetary) stats, their assigned value segment, their complete purchase history, and receive **personalized recommendations** on what they are most likely to buy next.
-*   **🧠 Customer Segmentation (RFM + KMeans)**: Uses K-Means clustering to automatically group customers into segments (`High-Value`, `Regular`, `Occasional Shopper`, `At-Risk`). 
+*   ** Store Performance Dashboard**: An interactive overview of the store's top-performing metrics, including best-selling products and transaction volumes by country, visualized with Plotly.
+*   ** Customer Profile (CRM)**: Look up any customer by their ID to get a 360-degree view of their purchasing behavior. View their RFM (Recency, Frequency, Monetary) stats, their assigned value segment, their complete purchase history, and receive **personalized recommendations** on what they are most likely to buy next.
+*   ** Customer Segmentation (RFM + KMeans)**: Uses K-Means clustering to automatically group customers into segments (`High-Value`, `Regular`, `Occasional Shopper`, `At-Risk`). 
     *   *Individual Prediction:* Enter manual RFM values to instantly predict a customer's segment.
     *   *Batch Prediction:* Upload a CSV of RFM values to segment thousands of customers simultaneously and download the results.
-*   **🔁 Advanced Product Recommender**: 
+*   ** Advanced Product Recommender**: 
     *   *Frequently Bought Together*: Uses Market Basket Analysis (**FP-Growth algorithm**) to find strong association rules between items in the exact same cart.
     *   *Customers Also Liked*: Uses **Cosine Similarity** (Collaborative Filtering) to recommend products based on broader customer purchase patterns.
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### 1. Store Performance Dashboard
-*(Drop a screenshot of the main page charts here)*
-![Dashboard](assets/dashboard.png)
+*<img width="1599" height="764" alt="Screenshot 2026-07-16 213209" src="https://github.com/user-attachments/assets/10fff3da-81b7-4901-b67d-e5331e7e9b3c" />
+
 
 ### 2. Customer Profile & CRM
-*(Drop a screenshot of a user lookup, e.g., ID 17850.0, showing their KPI cards and recommendations)*
-![Customer Profile](assets/customer_profile.png)
+*<img width="1599" height="742" alt="Screenshot 2026-07-16 213313" src="https://github.com/user-attachments/assets/67b834b2-3b8d-4f4a-a3a5-48dd51a31175" />
+*<img width="1591" height="761" alt="Screenshot 2026-07-16 213329" src="https://github.com/user-attachments/assets/14765032-fbca-4029-b155-f5f5fc371cb7" />
+
 
 ### 3. Advanced Recommender
-*(Drop a screenshot showing the dual-column "Frequently Bought Together" vs "Customers Also Liked")*
-![Recommender](assets/recommender.png)
+<img width="1585" height="754" alt="Screenshot 2026-07-16 213413" src="https://github.com/user-attachments/assets/54b6a98c-5f54-4ecc-b4a2-495e09860e7a" />
+
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 *   **Frontend**: [Streamlit](https://streamlit.io/)
 *   **Machine Learning**: [Scikit-learn](https://scikit-learn.org/) (KMeans, StandardScaler, Cosine Similarity), [mlxtend](http://rasbt.github.io/mlxtend/) (FP-Growth, Association Rules)
@@ -44,7 +45,7 @@ Built with **Streamlit**, **Scikit-Learn**, and **mlxtend**, this project proces
 
 ---
 
-## 📂 Project Architecture
+## Project Architecture
 
 The project is split into two main components to separate heavy model training from the lightweight web application:
 
@@ -53,7 +54,7 @@ The project is split into two main components to separate heavy model training f
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 Follow these steps to run the project locally on your machine.
 
